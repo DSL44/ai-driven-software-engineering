@@ -9,3 +9,5 @@ function calculateShipping(weightInKg, distanceInKm) {
   const total = fixedCost + weightInKg * costPerKg + distanceInKm * costPerKm;
   return Number(total.toFixed(2));
 }
+
+module.exports = calculateShipping;
